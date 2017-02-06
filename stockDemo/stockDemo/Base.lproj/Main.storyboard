@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x9c-2j-9LB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niS-Hc-vBL">
+                                <rect key="frame" x="41" y="107" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="掘金场"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgM-O1-hpz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-JT-v0a">
+                                <rect key="frame" x="42" y="171" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="斗牛场"/>
+                                <connections>
+                                    <action selector="bullBartleBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxh-0f-aA3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PS-CJ-iIY">
+                                <rect key="frame" x="43" y="227" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="夺宝场"/>
+                                <connections>
+                                    <action selector="treasureBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2mN-EU-uL9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="daK-II-lp8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="306"/>
+        </scene>
+        <!--斗牛场匹配-->
+        <scene sceneID="NVf-Ld-Wq6">
+            <objects>
+                <viewController storyboardIdentifier="JJWBullFightingViewController" id="ki4-Kz-RbI" userLabel="斗牛场匹配" customClass="JJWBullFightingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W1k-es-KGr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lgc-aP-TkK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xgn-Jj-Omo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVx-y3-0Sv">
+                                <rect key="frame" x="111" y="99" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="100"/>
+                                <connections>
+                                    <action selector="matchPlayerBtnClicked:" destination="ki4-Kz-RbI" eventType="touchUpInside" id="HsY-nT-rvb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2t-Lo-1Cw">
+                                <rect key="frame" x="245" y="99" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="1000"/>
+                                <connections>
+                                    <action selector="matchPlayerBtnClicked:" destination="ki4-Kz-RbI" eventType="touchUpInside" id="HNl-Eg-jxE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="500" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-MU-OD1">
+                                <rect key="frame" x="112" y="164" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="500"/>
+                                <connections>
+                                    <action selector="matchPlayerBtnClicked:" destination="ki4-Kz-RbI" eventType="touchUpInside" id="Ffh-dq-eWN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg2-Fa-Pwh">
+                                <rect key="frame" x="244" y="164" width="37" height="30"/>
+                                <animations/>
+                                <state key="normal" title="5000"/>
+                                <connections>
+                                    <action selector="matchPlayerBtnClicked:" destination="ki4-Kz-RbI" eventType="touchUpInside" id="9eK-ZQ-523"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mO-Ij-Gaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="306"/>
+        </scene>
+        <!--Apply View Controller-->
+        <scene sceneID="R3l-ut-jE6">
+            <objects>
+                <viewController storyboardIdentifier="JJWApplyViewController" id="5u9-PQ-D6w" customClass="JJWApplyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fsz-ih-Usq"/>
+                        <viewControllerLayoutGuide type="bottom" id="xS8-h3-HTD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uKh-Zy-wIY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cB-oy-bfT">
+                                <rect key="frame" x="227" y="171" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="报名"/>
+                                <connections>
+                                    <action selector="applyAMBtnClicked:" destination="5u9-PQ-D6w" eventType="touchUpInside" id="9dI-wj-Vsa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上午场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt8-yh-yyd">
+                                <rect key="frame" x="64" y="175" width="111" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下午场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYG-2C-uzc">
+                                <rect key="frame" x="64" y="261" width="111" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fX-c1-hiP">
+                                <rect key="frame" x="227" y="257" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="报名"/>
+                                <connections>
+                                    <action selector="applyPMBtnClicked:" destination="5u9-PQ-D6w" eventType="touchUpInside" id="eb9-O8-Zdv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="applyAMBtn" destination="7cB-oy-bfT" id="7rE-KX-ZYF"/>
+                        <outlet property="applyPMBtn" destination="2fX-c1-hiP" id="mcE-c6-M6U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBn-OW-nb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="992"/>
+        </scene>
+        <!--斗牛场-->
+        <scene sceneID="hj5-Zx-gWk">
+            <objects>
+                <viewController storyboardIdentifier="JJWBullRoomViewController" title="斗牛场" id="llk-bG-ap8" userLabel="斗牛场" customClass="JJWBullRoomViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UD3-sf-GCr"/>
+                        <viewControllerLayoutGuide type="bottom" id="4hC-Um-duN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4eg-sC-Nwu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfK-cP-NsR" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="120" width="560" height="177"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="AmO-c9-4cX"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-d4-1hA">
+                                <rect key="frame" x="65" y="313" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="买涨"/>
+                                <connections>
+                                    <action selector="buyUpBtnClicked:" destination="llk-bG-ap8" eventType="touchUpInside" id="CIV-m2-AGf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5by-BO-6hZ">
+                                <rect key="frame" x="156" y="313" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="买跌"/>
+                                <connections>
+                                    <action selector="buyFallBtnClicked:" destination="llk-bG-ap8" eventType="touchUpInside" id="6Xp-AF-59d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX0-P7-RYs">
+                                <rect key="frame" x="242" y="313" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="平仓"/>
+                                <connections>
+                                    <action selector="closeAPositionBtnClicked:" destination="llk-bG-ap8" eventType="touchUpInside" id="RVl-vk-58W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mz4-lZ-A5J">
+                                <rect key="frame" x="28" y="66" width="67" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="56.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="047-Yp-U9w">
+                                <rect key="frame" x="109" y="66" width="77" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7.9%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giG-72-ama">
+                                <rect key="frame" x="194" y="66" width="90" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7D-L3-oKO">
+                                <rect key="frame" x="308" y="313" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="认输"/>
+                                <connections>
+                                    <action selector="giveUp:" destination="llk-bG-ap8" eventType="touchUpInside" id="jDS-pf-gT8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fyG-rI-GeA">
+                                <rect key="frame" x="20" y="360" width="245" height="232"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8JE-UF-VHp">
+                                <rect key="frame" x="300" y="360" width="280" height="220"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8JE-UF-VHp" firstAttribute="trailing" secondItem="4eg-sC-Nwu" secondAttribute="trailingMargin" id="8Bk-ph-nqV"/>
+                            <constraint firstItem="bfK-cP-NsR" firstAttribute="leading" secondItem="4eg-sC-Nwu" secondAttribute="leading" constant="20" id="Bmz-2b-8bd"/>
+                            <constraint firstItem="fyG-rI-GeA" firstAttribute="leading" secondItem="4eg-sC-Nwu" secondAttribute="leadingMargin" id="FEK-QT-3eT"/>
+                            <constraint firstItem="bfK-cP-NsR" firstAttribute="top" secondItem="UD3-sf-GCr" secondAttribute="bottom" constant="100" id="FQd-EP-kUF"/>
+                            <constraint firstItem="8JE-UF-VHp" firstAttribute="leading" secondItem="fyG-rI-GeA" secondAttribute="trailing" id="HSO-Df-yAD"/>
+                            <constraint firstItem="4hC-Um-duN" firstAttribute="top" secondItem="fyG-rI-GeA" secondAttribute="bottom" constant="8" id="Sgi-tC-frG"/>
+                            <constraint firstItem="8JE-UF-VHp" firstAttribute="top" secondItem="bfK-cP-NsR" secondAttribute="bottom" constant="63" id="YQc-RV-XIt"/>
+                            <constraint firstItem="4hC-Um-duN" firstAttribute="top" secondItem="8JE-UF-VHp" secondAttribute="bottom" constant="20" id="ZM4-RJ-6qL"/>
+                            <constraint firstItem="fyG-rI-GeA" firstAttribute="top" secondItem="oX0-P7-RYs" secondAttribute="bottom" constant="17" id="bnU-5b-MEt"/>
+                            <constraint firstAttribute="trailing" secondItem="bfK-cP-NsR" secondAttribute="trailing" constant="20" id="rfj-i0-sgf"/>
+                            <constraint firstItem="8JE-UF-VHp" firstAttribute="width" secondItem="fyG-rI-GeA" secondAttribute="width" id="w7L-nT-W9W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="bfK-cP-NsR" id="4kv-Or-ID5"/>
+                        <outlet property="indexLabel" destination="mz4-lZ-A5J" id="ASk-VQ-xA6"/>
+                        <outlet property="label1" destination="047-Yp-U9w" id="i6W-2I-beV"/>
+                        <outlet property="label2" destination="giG-72-ama" id="6Gr-cQ-o6y"/>
+                        <outlet property="messageView1" destination="fyG-rI-GeA" id="H0U-fO-13T"/>
+                        <outlet property="messageView2" destination="8JE-UF-VHp" id="WKQ-62-inU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jR9-bv-pM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2369" y="306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hbb-r1-iU9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x9c-2j-9LB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k6z-iA-cNt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LND-H3-w5A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uls-CV-WMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="966"/>
+        </scene>
+        <!--Treasure View Controller-->
+        <scene sceneID="xoD-Gf-RmK">
+            <objects>
+                <viewController storyboardIdentifier="JJWTreasureViewController" id="DIE-W5-yAY" customClass="JJWTreasureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NvL-Er-TVx"/>
+                        <viewControllerLayoutGuide type="bottom" id="2RL-aO-Ave"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QKB-Bv-dyr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWC-JF-c8a">
+                                <rect key="frame" x="20" y="53" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="56.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNm-C3-Pka">
+                                <rect key="frame" x="124" y="53" width="107" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12.3%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAD-wt-qQZ">
+                                <rect key="frame" x="239" y="53" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-hV-tSN" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="113" width="560" height="236"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="n1g-NQ-uB1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-pE-2pV">
+                                <rect key="frame" x="69" y="357" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="买涨"/>
+                                <connections>
+                                    <action selector="buyUpBtnClicked:" destination="DIE-W5-yAY" eventType="touchUpInside" id="hoI-Un-3sT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eX-d6-YOz">
+                                <rect key="frame" x="140" y="357" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="买跌"/>
+                                <connections>
+                                    <action selector="buyFallBtnClicked:" destination="DIE-W5-yAY" eventType="touchUpInside" id="elt-nR-Zvq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ps-iA-0p2">
+                                <rect key="frame" x="213" y="357" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="平仓"/>
+                                <connections>
+                                    <action selector="sellBtnClicked:" destination="DIE-W5-yAY" eventType="touchUpInside" id="Yuq-VM-XI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v6-lk-kPy">
+                                <rect key="frame" x="275" y="357" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="重置"/>
+                                <connections>
+                                    <action selector="resetBtnClicked:" destination="DIE-W5-yAY" eventType="touchUpInside" id="Mjb-lS-n4i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cea-hV-tSN" firstAttribute="trailing" secondItem="QKB-Bv-dyr" secondAttribute="trailingMargin" id="IFr-6T-Lwx"/>
+                            <constraint firstItem="Cea-hV-tSN" firstAttribute="top" secondItem="NvL-Er-TVx" secondAttribute="bottom" constant="93" id="im7-MG-8x0"/>
+                            <constraint firstItem="Cea-hV-tSN" firstAttribute="leading" secondItem="QKB-Bv-dyr" secondAttribute="leadingMargin" id="lhK-kp-Mag"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="Cea-hV-tSN" id="TF9-4A-jUq"/>
+                        <outlet property="indexLabel" destination="jWC-JF-c8a" id="CAz-pm-YW6"/>
+                        <outlet property="label1" destination="BNm-C3-Pka" id="HDu-ls-JmB"/>
+                        <outlet property="label2" destination="rAD-wt-qQZ" id="3Ww-E2-NHT"/>
+                        <outlet property="resetBtn" destination="2v6-lk-kPy" id="ObO-3L-6LG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exO-1l-KSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="992"/>
+        </scene>
+    </scenes>
+</document>
