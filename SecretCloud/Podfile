@@ -1,0 +1,6 @@
+platform:ios,'7.1'
+pod 'RESideMenu', '~> 4.0.7'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'AFNetworking', '~> 2.6.0'
+pod 'MJRefresh', '~> 2.4.11'
+pod 'Masonry'
