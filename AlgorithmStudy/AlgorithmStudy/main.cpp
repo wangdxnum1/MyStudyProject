@@ -8,15 +8,21 @@
 
 #include <iostream>
 
+void bubbleSort(int array[], int length);
+void selectSort(int array[], int length);
 void insertSort1(int array[], int length);
 
 void insertSort2(int a[], int n);
 
 void shellSort(int array[], int length);
 
+void quickSort(int array[], int length);
+
 void mergeSort(int array[], int length);
 void p_mergeSort(int array[],int l,int r);
 void mergeArray(int a[],int first, int mid, int last);
+
+void p_quickSort(int a[], int l, int r);
 
 void printArray(int array[], int length);
 
@@ -29,15 +35,53 @@ int main(int argc, const char * argv[]) {
     
     g_array = new int[512];
     
+//    selectSort(array, length);
+    bubbleSort(array, length);
+    
 //    insertSort1(array, length);
 //    insertSort2(array, length);
 //    shellSort(array,length);
     
-    mergeSort(array, length);
+//    mergeSort(array, length);
+//    quickSort(array, length);
+    
     
     printArray(array, length);
     
     return 0;
+}
+
+void bubbleSort(int a[], int length){
+    for (int i = 0; i < length - 1; ++i) {
+        bool ordered = true;
+        for (int j = 0; j < length - 1 -i; ++j) {
+            if(a[j] > a[j + 1]){
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+                ordered = false;
+            }
+        }
+        if(ordered){
+            break;
+        }
+    }
+}
+
+void selectSort(int a[], int length){
+    for (int i = 0; i < length - 1; ++i) {
+        int minIndex = i;
+        for (int j = i + 1; j < length; ++j) {
+            if(a[minIndex] > a[j]){
+                minIndex = j;
+            }
+        }
+        if(minIndex != i){
+            int temp = a[i];
+            a[i] = a[minIndex];
+            a[minIndex] = temp;
+        }
+    }
 }
 
 void insertSort1(int l[], int n){
@@ -99,6 +143,11 @@ void mergeSort(int array[], int length){
     p_mergeSort(array, 0, length - 1);
 }
 
+void quickSort(int array[], int length){
+    p_quickSort(array, 0, length - 1);
+}
+
+
 void p_mergeSort(int array[],int l,int r){
     if(l < r){
         int mid = (l + r) / 2;
@@ -134,6 +183,42 @@ void mergeArray(int a[],int first, int mid, int last){
     
     for (int i = 0; i < k; ++i) {
         a[first + i] = g_array[i];
+    }
+}
+
+void p_quickSort(int a[], int l, int r){
+    if(l < r){
+        int i = l;
+        int j = r;
+        int p = a[l];
+        
+        while (i < j) {
+            while (i < j && a[j] >= p) {
+                --j;
+            }
+            if(i < j){
+                a[i++] = a[j];
+            }
+            
+            while (i < j && a[i] <= p) {
+                ++i;
+            }
+            
+            if(i < j){
+                a[j--] = a[i];
+            }
+        }
+        
+        a[i] = p;
+        p_quickSort(a, l, i - 1);
+        p_quickSort(a, i + 1, r);
+//        if(i -1 > l){
+//            p_quickSort(a, l, i - 1);
+//        }
+//        
+//        if(r > i + 1){
+//            p_quickSort(a, i + 1, r);
+//        }
     }
 }
 
