@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mao-0z-33C">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7g-vs-wOC">
-                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <rect key="frame" x="87" y="277" width="200" height="156"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U94-lH-RAM">
@@ -34,6 +34,14 @@
                                 <rect key="frame" x="250" y="108" width="30" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN1-uS-Kxc">
+                                <rect key="frame" x="140" y="481" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksE-oj-8pF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -43,6 +51,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="L7g-vs-wOC" secondAttribute="trailing" constant="72" id="ZVc-Bg-Y3s"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="17a-w9-PcL">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="J6O-q7-RGc">
+                            <connections>
+                                <action selector="nextBtnClicked:" destination="BYZ-38-t0r" id="Gnu-Bt-yxQ"/>
+                                <segue destination="xEs-ZR-JEl" kind="show" id="xmB-al-Sri"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView1" destination="U94-lH-RAM" id="iPl-ZT-lTd"/>
                         <outlet property="imageView2" destination="1St-uz-g7R" id="uAB-4G-uqt"/>
@@ -51,7 +67,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="37.331334332833585"/>
+            <point key="canvasLocation" x="804" y="24.7376311844078"/>
+        </scene>
+        <!--Test1 View Controller-->
+        <scene sceneID="QEn-FG-ee5">
+            <objects>
+                <viewController id="xEs-ZR-JEl" customClass="TWTest1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UAR-sC-1Nh"/>
+                        <viewControllerLayoutGuide type="bottom" id="9DV-PB-050"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PuJ-UG-mf2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vQq-QY-92J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vQq-QY-92J" firstAttribute="top" secondItem="PuJ-UG-mf2" secondAttribute="top" id="REg-kx-VWx"/>
+                            <constraint firstAttribute="trailing" secondItem="vQq-QY-92J" secondAttribute="trailing" id="tom-2w-kVl"/>
+                            <constraint firstItem="vQq-QY-92J" firstAttribute="leading" secondItem="PuJ-UG-mf2" secondAttribute="leading" id="tqA-lb-Eo2"/>
+                            <constraint firstItem="9DV-PB-050" firstAttribute="top" secondItem="vQq-QY-92J" secondAttribute="bottom" id="zvQ-c1-p84"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="vQq-QY-92J" id="Jrd-js-h0s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1o9-yw-t97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477.5999999999999" y="24.7376311844078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tg1-wF-oyV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mao-0z-33C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tSc-lf-57h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wdQ-UA-1ih"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUY-ca-5ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="24.7376311844078"/>
         </scene>
     </scenes>
 </document>

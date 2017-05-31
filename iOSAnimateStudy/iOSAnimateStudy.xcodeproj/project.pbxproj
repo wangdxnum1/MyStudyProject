@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB01A4D01EDEB01500058BB4 /* TWTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB01A4CF1EDEB01500058BB4 /* TWTest1ViewController.m */; };
+		EBB113311ED401C00028FC17 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB113301ED401C00028FC17 /* UIColor+RandomColor.m */; };
 		EBC796D21ECEB78E000371EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC796D11ECEB78E000371EF /* main.m */; };
 		EBC796D51ECEB78E000371EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC796D41ECEB78E000371EF /* AppDelegate.m */; };
 		EBC796D81ECEB78E000371EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC796D71ECEB78E000371EF /* ViewController.m */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB01A4CE1EDEB01500058BB4 /* TWTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTest1ViewController.h; sourceTree = "<group>"; };
+		EB01A4CF1EDEB01500058BB4 /* TWTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTest1ViewController.m; sourceTree = "<group>"; };
+		EBB1132F1ED401C00028FC17 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
+		EBB113301ED401C00028FC17 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
 		EBC796CD1ECEB78E000371EF /* iOSAnimateStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimateStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC796D11ECEB78E000371EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBC796D31ECEB78E000371EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +115,10 @@
 		EBC796CF1ECEB78E000371EF /* iOSAnimateStudy */ = {
 			isa = PBXGroup;
 			children = (
+				EB01A4CE1EDEB01500058BB4 /* TWTest1ViewController.h */,
+				EB01A4CF1EDEB01500058BB4 /* TWTest1ViewController.m */,
+				EBB1132F1ED401C00028FC17 /* UIColor+RandomColor.h */,
+				EBB113301ED401C00028FC17 /* UIColor+RandomColor.m */,
 				EBC797071ECEBEB3000371EF /* Gift@2x.png */,
 				EBC797081ECEBEB3000371EF /* Gift@3x.png */,
 				EBC797031ECEBA28000371EF /* 1.png */,
@@ -292,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB01A4D01EDEB01500058BB4 /* TWTest1ViewController.m in Sources */,
+				EBB113311ED401C00028FC17 /* UIColor+RandomColor.m in Sources */,
 				EBC796D81ECEB78E000371EF /* ViewController.m in Sources */,
 				EBC796D51ECEB78E000371EF /* AppDelegate.m in Sources */,
 				EBC796D21ECEB78E000371EF /* main.m in Sources */,
@@ -534,6 +546,7 @@
 				EBC796FC1ECEB78F000371EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBC796FD1ECEB78F000371EF /* Build configuration list for PBXNativeTarget "iOSAnimateStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +555,7 @@
 				EBC796FF1ECEB78F000371EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBC797001ECEB78F000371EF /* Build configuration list for PBXNativeTarget "iOSAnimateStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +564,7 @@
 				EBC797021ECEB78F000371EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

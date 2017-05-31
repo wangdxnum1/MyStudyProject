@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBAB30C31ED96C9B00B031F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB30C21ED96C9B00B031F5 /* main.m */; };
+		EBAB30C61ED96C9B00B031F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB30C51ED96C9B00B031F5 /* AppDelegate.m */; };
+		EBAB30C91ED96C9B00B031F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB30C81ED96C9B00B031F5 /* ViewController.m */; };
+		EBAB30CC1ED96C9B00B031F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAB30CA1ED96C9B00B031F5 /* Main.storyboard */; };
+		EBAB30CE1ED96C9B00B031F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAB30CD1ED96C9B00B031F5 /* Assets.xcassets */; };
+		EBAB30D11ED96C9B00B031F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAB30CF1ED96C9B00B031F5 /* LaunchScreen.storyboard */; };
+		EBAB30DC1ED96C9B00B031F5 /* AncorPointTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB30DB1ED96C9B00B031F5 /* AncorPointTestTests.m */; };
+		EBAB30E71ED96C9B00B031F5 /* AncorPointTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB30E61ED96C9B00B031F5 /* AncorPointTestUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBAB30D81ED96C9B00B031F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBAB30B61ED96C9B00B031F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBAB30BD1ED96C9B00B031F5;
+			remoteInfo = AncorPointTest;
+		};
+		EBAB30E31ED96C9B00B031F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBAB30B61ED96C9B00B031F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBAB30BD1ED96C9B00B031F5;
+			remoteInfo = AncorPointTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBAB30BE1ED96C9B00B031F5 /* AncorPointTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AncorPointTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAB30C21ED96C9B00B031F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBAB30C41ED96C9B00B031F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBAB30C51ED96C9B00B031F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBAB30C71ED96C9B00B031F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBAB30C81ED96C9B00B031F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBAB30CB1ED96C9B00B031F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBAB30CD1ED96C9B00B031F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBAB30D01ED96C9B00B031F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBAB30D21ED96C9B00B031F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAB30D71ED96C9B00B031F5 /* AncorPointTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AncorPointTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAB30DB1ED96C9B00B031F5 /* AncorPointTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AncorPointTestTests.m; sourceTree = "<group>"; };
+		EBAB30DD1ED96C9B00B031F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAB30E21ED96C9B00B031F5 /* AncorPointTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AncorPointTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAB30E61ED96C9B00B031F5 /* AncorPointTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AncorPointTestUITests.m; sourceTree = "<group>"; };
+		EBAB30E81ED96C9B00B031F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBAB30BB1ED96C9B00B031F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAB30D41ED96C9B00B031F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAB30DF1ED96C9B00B031F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBAB30B51ED96C9B00B031F5 = {
+			isa = PBXGroup;
+			children = (
+				EBAB30C01ED96C9B00B031F5 /* AncorPointTest */,
+				EBAB30DA1ED96C9B00B031F5 /* AncorPointTestTests */,
+				EBAB30E51ED96C9B00B031F5 /* AncorPointTestUITests */,
+				EBAB30BF1ED96C9B00B031F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBAB30BF1ED96C9B00B031F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBAB30BE1ED96C9B00B031F5 /* AncorPointTest.app */,
+				EBAB30D71ED96C9B00B031F5 /* AncorPointTestTests.xctest */,
+				EBAB30E21ED96C9B00B031F5 /* AncorPointTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBAB30C01ED96C9B00B031F5 /* AncorPointTest */ = {
+			isa = PBXGroup;
+			children = (
+				EBAB30C41ED96C9B00B031F5 /* AppDelegate.h */,
+				EBAB30C51ED96C9B00B031F5 /* AppDelegate.m */,
+				EBAB30C71ED96C9B00B031F5 /* ViewController.h */,
+				EBAB30C81ED96C9B00B031F5 /* ViewController.m */,
+				EBAB30CA1ED96C9B00B031F5 /* Main.storyboard */,
+				EBAB30CD1ED96C9B00B031F5 /* Assets.xcassets */,
+				EBAB30CF1ED96C9B00B031F5 /* LaunchScreen.storyboard */,
+				EBAB30D21ED96C9B00B031F5 /* Info.plist */,
+				EBAB30C11ED96C9B00B031F5 /* Supporting Files */,
+			);
+			path = AncorPointTest;
+			sourceTree = "<group>";
+		};
+		EBAB30C11ED96C9B00B031F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBAB30C21ED96C9B00B031F5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBAB30DA1ED96C9B00B031F5 /* AncorPointTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBAB30DB1ED96C9B00B031F5 /* AncorPointTestTests.m */,
+				EBAB30DD1ED96C9B00B031F5 /* Info.plist */,
+			);
+			path = AncorPointTestTests;
+			sourceTree = "<group>";
+		};
+		EBAB30E51ED96C9B00B031F5 /* AncorPointTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBAB30E61ED96C9B00B031F5 /* AncorPointTestUITests.m */,
+				EBAB30E81ED96C9B00B031F5 /* Info.plist */,
+			);
+			path = AncorPointTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBAB30BD1ED96C9B00B031F5 /* AncorPointTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBAB30EB1ED96C9B00B031F5 /* Build configuration list for PBXNativeTarget "AncorPointTest" */;
+			buildPhases = (
+				EBAB30BA1ED96C9B00B031F5 /* Sources */,
+				EBAB30BB1ED96C9B00B031F5 /* Frameworks */,
+				EBAB30BC1ED96C9B00B031F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AncorPointTest;
+			productName = AncorPointTest;
+			productReference = EBAB30BE1ED96C9B00B031F5 /* AncorPointTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBAB30D61ED96C9B00B031F5 /* AncorPointTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBAB30EE1ED96C9B00B031F5 /* Build configuration list for PBXNativeTarget "AncorPointTestTests" */;
+			buildPhases = (
+				EBAB30D31ED96C9B00B031F5 /* Sources */,
+				EBAB30D41ED96C9B00B031F5 /* Frameworks */,
+				EBAB30D51ED96C9B00B031F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBAB30D91ED96C9B00B031F5 /* PBXTargetDependency */,
+			);
+			name = AncorPointTestTests;
+			productName = AncorPointTestTests;
+			productReference = EBAB30D71ED96C9B00B031F5 /* AncorPointTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBAB30E11ED96C9B00B031F5 /* AncorPointTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBAB30F11ED96C9B00B031F5 /* Build configuration list for PBXNativeTarget "AncorPointTestUITests" */;
+			buildPhases = (
+				EBAB30DE1ED96C9B00B031F5 /* Sources */,
+				EBAB30DF1ED96C9B00B031F5 /* Frameworks */,
+				EBAB30E01ED96C9B00B031F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBAB30E41ED96C9B00B031F5 /* PBXTargetDependency */,
+			);
+			name = AncorPointTestUITests;
+			productName = AncorPointTestUITests;
+			productReference = EBAB30E21ED96C9B00B031F5 /* AncorPointTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBAB30B61ED96C9B00B031F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = haKim;
+				TargetAttributes = {
+					EBAB30BD1ED96C9B00B031F5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W398QN8ZGP;
+						ProvisioningStyle = Automatic;
+					};
+					EBAB30D61ED96C9B00B031F5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W398QN8ZGP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBAB30BD1ED96C9B00B031F5;
+					};
+					EBAB30E11ED96C9B00B031F5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W398QN8ZGP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBAB30BD1ED96C9B00B031F5;
+					};
+				};
+			};
+			buildConfigurationList = EBAB30B91ED96C9B00B031F5 /* Build configuration list for PBXProject "AncorPointTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBAB30B51ED96C9B00B031F5;
+			productRefGroup = EBAB30BF1ED96C9B00B031F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBAB30BD1ED96C9B00B031F5 /* AncorPointTest */,
+				EBAB30D61ED96C9B00B031F5 /* AncorPointTestTests */,
+				EBAB30E11ED96C9B00B031F5 /* AncorPointTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBAB30BC1ED96C9B00B031F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAB30D11ED96C9B00B031F5 /* LaunchScreen.storyboard in Resources */,
+				EBAB30CE1ED96C9B00B031F5 /* Assets.xcassets in Resources */,
+				EBAB30CC1ED96C9B00B031F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAB30D51ED96C9B00B031F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAB30E01ED96C9B00B031F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBAB30BA1ED96C9B00B031F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAB30C91ED96C9B00B031F5 /* ViewController.m in Sources */,
+				EBAB30C61ED96C9B00B031F5 /* AppDelegate.m in Sources */,
+				EBAB30C31ED96C9B00B031F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAB30D31ED96C9B00B031F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAB30DC1ED96C9B00B031F5 /* AncorPointTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAB30DE1ED96C9B00B031F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAB30E71ED96C9B00B031F5 /* AncorPointTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBAB30D91ED96C9B00B031F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBAB30BD1ED96C9B00B031F5 /* AncorPointTest */;
+			targetProxy = EBAB30D81ED96C9B00B031F5 /* PBXContainerItemProxy */;
+		};
+		EBAB30E41ED96C9B00B031F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBAB30BD1ED96C9B00B031F5 /* AncorPointTest */;
+			targetProxy = EBAB30E31ED96C9B00B031F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBAB30CA1ED96C9B00B031F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBAB30CB1ED96C9B00B031F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBAB30CF1ED96C9B00B031F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBAB30D01ED96C9B00B031F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBAB30E91ED96C9B00B031F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBAB30EA1ED96C9B00B031F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBAB30EC1ED96C9B00B031F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W398QN8ZGP;
+				INFOPLIST_FILE = AncorPointTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakim.AncorPointTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBAB30ED1ED96C9B00B031F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W398QN8ZGP;
+				INFOPLIST_FILE = AncorPointTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakim.AncorPointTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBAB30EF1ED96C9B00B031F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W398QN8ZGP;
+				INFOPLIST_FILE = AncorPointTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakim.AncorPointTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AncorPointTest.app/AncorPointTest";
+			};
+			name = Debug;
+		};
+		EBAB30F01ED96C9B00B031F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W398QN8ZGP;
+				INFOPLIST_FILE = AncorPointTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakim.AncorPointTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AncorPointTest.app/AncorPointTest";
+			};
+			name = Release;
+		};
+		EBAB30F21ED96C9B00B031F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W398QN8ZGP;
+				INFOPLIST_FILE = AncorPointTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakim.AncorPointTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AncorPointTest;
+			};
+			name = Debug;
+		};
+		EBAB30F31ED96C9B00B031F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W398QN8ZGP;
+				INFOPLIST_FILE = AncorPointTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakim.AncorPointTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AncorPointTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBAB30B91ED96C9B00B031F5 /* Build configuration list for PBXProject "AncorPointTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAB30E91ED96C9B00B031F5 /* Debug */,
+				EBAB30EA1ED96C9B00B031F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBAB30EB1ED96C9B00B031F5 /* Build configuration list for PBXNativeTarget "AncorPointTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAB30EC1ED96C9B00B031F5 /* Debug */,
+				EBAB30ED1ED96C9B00B031F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBAB30EE1ED96C9B00B031F5 /* Build configuration list for PBXNativeTarget "AncorPointTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAB30EF1ED96C9B00B031F5 /* Debug */,
+				EBAB30F01ED96C9B00B031F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBAB30F11ED96C9B00B031F5 /* Build configuration list for PBXNativeTarget "AncorPointTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAB30F21ED96C9B00B031F5 /* Debug */,
+				EBAB30F31ED96C9B00B031F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBAB30B61ED96C9B00B031F5 /* Project object */;
+}
